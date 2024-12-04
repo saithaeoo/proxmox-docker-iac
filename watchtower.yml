@@ -9,7 +9,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       DOCKER_API_VERSION: 1.45
-      TZ: Myanmar/Yangon
+      TZ: Europe/Berlin
       WATCHTOWER_CLEANUP: true
       WATCHTOWER_REMOVE_VOLUMES: true
       WATCHTOWER_DEBUG: false
