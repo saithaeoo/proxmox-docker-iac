@@ -13,7 +13,8 @@ jobs:
         config:
           - { host: '192.168.0.244', stack_name: 'uptime-kuma' }
           - { host: '192.168.0.244', stack_name: 'watchtower' }
-          
+          - { host: '10.10.0.102', stack_name: 'homarr' }
+
     env:
       DOCKER_HOST: tcp://${{ matrix.config.host }}:2375
       DOCKER_CONTEXT_NAME: ${{ matrix.config.stack_name }}-ctx
